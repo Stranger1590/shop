@@ -1,0 +1,129 @@
+@media (max-width:375px) { /* Mobile First */
+    html {
+        width: 375px;
+    }
+
+    .header {
+        width: 375px;
+        z-index: 600;
+    }
+
+    .header__icons {
+        display: none;
+    }
+
+    .adaptive {
+        font-size: 30px;
+    }
+
+    .main__btn span {
+        font-size: 15px;
+    }
+
+    .main__btn {
+        padding: 8px;
+        width: 150px;
+    }
+    .zindex {
+        z-index: 100;
+    }
+    .limit {
+        width: 250px;
+    }
+    .items__name {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .goods__items img {
+        width: 35%;
+    }
+    
+    .left {
+        margin-right: -90px;
+        font-size: 10px;
+    }
+    .right {
+        margin-left: -90px;
+        font-size: 10px;
+    }
+    .goods__grid .container{
+        margin-left: 15%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav__list {
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media (max-width:900px) {
+    body {
+        width: 900px;
+    }
+    .header {
+        width: 900px;
+    }
+    .header__icons {
+        width: 50%;
+    }
+    .goods__grid .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 31px;
+        place-items: left;
+    }
+    .box__for {
+        position: relative;
+    }
+    .row__line::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 90%;
+        background-color: #fff;
+        left: 18.5rem;
+        top: 50%;
+    }
+    .box_forXR {
+        position: relative;
+    }
+    .line__row::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 90%;
+        background-color: #fff;
+        right: 18.5rem;
+        top: 50%;
+    }
+    .footer__content .container {
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }
+    .zindex {
+        z-index: 500;
+    }
+    .left {
+        margin-right: -25px;
+        width: 280px;
+        font-size: 14px;
+    }
+    .right {
+        margin-left: -70px;
+        width: 280px;
+        font-size: 14px;
+    }
+}
+@media (max-width:768px) {
+    .goods__grid .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 39%;
+    }
+    .goods__grid ::after {
+        display: none;
+    }
+}
